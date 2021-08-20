@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EyeProtection", "EyeProtection\EyeProtection.vbproj", "{C55AC77B-5410-42D0-876A-2C0E1234C432}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EyeProtectionPlugin", "EyeProtectionPlugin\EyeProtectionPlugin.vbproj", "{8BBA4462-0AAF-42B0-8040-B4153BD8A750}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C55AC77B-5410-42D0-876A-2C0E1234C432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55AC77B-5410-42D0-876A-2C0E1234C432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55AC77B-5410-42D0-876A-2C0E1234C432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55AC77B-5410-42D0-876A-2C0E1234C432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BBA4462-0AAF-42B0-8040-B4153BD8A750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BBA4462-0AAF-42B0-8040-B4153BD8A750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BBA4462-0AAF-42B0-8040-B4153BD8A750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BBA4462-0AAF-42B0-8040-B4153BD8A750}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
